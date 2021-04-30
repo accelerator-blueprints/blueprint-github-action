@@ -1,1 +1,1 @@
-# blueprint-github-action
+# Blueprint Github Action
