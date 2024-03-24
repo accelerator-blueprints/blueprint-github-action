@@ -18,7 +18,7 @@ jobs:
     if: github.repository != 'workflow-actions/blueprint-github-action'
     steps:
       # Step 1: run a standard checkout action, provided by github
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3.6.0
         with:
           fetch-depth: '1'
           submodules: 'recursive'
@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       # Step 1: run a standard checkout action, provided by github
-      - uses: actions/checkout@v3.5.2
+      - uses: actions/checkout@v3.6.0
         with:
           ref: ${{ env.REF }}
           fetch-depth: '1'
@@ -49,7 +49,7 @@ jobs:
         run: echo "::set-output name=CURRENT_DATE::$(date -u +'%Y-%m-%dT%H-%M')"
 
       # Step 3: Display a message if 'sync' step had new commits (simple test)
-      - uses: tgymnich/fork-sync@v1.8
+      - uses: tgymnich/fork-sync@v1.9
         with:
           base: main
           head: main
