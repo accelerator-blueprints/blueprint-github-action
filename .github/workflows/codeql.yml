@@ -12,7 +12,7 @@ jobs:
 
     steps:
       - uses: actions/checkout@cd7d8d697e10461458bc61a30d094dc601a8b017
-      - uses: github/codeql-action/init@v2
+      - uses: github/codeql-action/init@v3.25.10
         with:
           languages: javascript # comma separated list of values from {go, python, javascript, java, cpp, csharp} (not YET ruby, sorry!)
           
